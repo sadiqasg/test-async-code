@@ -24,7 +24,7 @@ describe("fetching countries from api using axios", () => {
         const result = await fetchCountryByName();
         expect(result.length).toBeGreaterThan(1);
     });
-    it("expects fetchCountryByContinent to return country by continent", async () => {
+    it("expects fetchCountryByContinent to return false because the function is set to return false", async () => {
         const result = await fetchCountryByContinent();
         expect(result).toBeFalse();
     });
